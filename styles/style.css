@@ -1,0 +1,130 @@
+/* Reset and base styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Consolas', 'Courier New', monospace;
+  background-color: #1e1e1e;
+  color: #d4d4d4;
+  height: 100vh;
+  display: flex;
+}
+
+.vscode-container {
+  display: flex;
+  width: 100%;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  background-color: #252526;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-right: 1px solid #333;
+  padding: 10px;
+}
+
+.sidebar-section {
+  font-size: 0.9rem;
+  color: #cccccc;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.file-tree,
+.sub-files {
+  list-style: none;
+  padding-left: 10px;
+}
+
+.file,
+.folder {
+  padding: 4px 0;
+  cursor: pointer;
+}
+
+.file:hover,
+.folder:hover {
+  background-color: #373737;
+}
+
+.file.active {
+  background-color: #094771;
+  color: #fff;
+}
+
+/* Nested file list under folder */
+.sub-files {
+  padding-left: 15px;
+  margin-top: 5px;
+}
+
+/* Contact Info Bar */
+.contact-bar {
+  font-size: 0.75rem;
+  padding-top: 10px;
+  border-top: 1px solid #333;
+  color: #999;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+/* Editor Area */
+.editor {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Tabs Bar */
+.tabs {
+  display: flex;
+  background-color: #2d2d2d;
+  border-bottom: 1px solid #444;
+}
+
+.tab {
+  padding: 8px 12px;
+  cursor: pointer;
+  border-right: 1px solid #444;
+  background-color: #2d2d2d;
+  display: flex;
+  align-items: center;
+}
+
+.tab.active {
+  background-color: #1e1e1e;
+  color: #fff;
+}
+
+.tab .close {
+  margin-left: 8px;
+  color: #888;
+  cursor: pointer;
+}
+
+/* Editor Window */
+.editor-window {
+  background-color: #1e1e1e;
+  padding: 20px;
+  height: 100%;
+  overflow-y: auto;
+  white-space: pre-wrap;
+}
+
+pre code {
+  color: #d4d4d4;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Syntax Colors */
+.comment { color: #6A9955; }
+.keyword { color: #569CD6; }
+.string { color: #CE9178; }
