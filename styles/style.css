@@ -21,12 +21,16 @@ body {
 /* Sidebar */
 .sidebar {
   width: 250px;
-  background-color: #252526;
+  background-color: #1e1e1e;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border-right: 1px solid #333;
+  border-right: 1px solid #3c3c3c;
   padding: 10px;
+}
+
+.sidebar-top {
+  flex-grow: 1;
 }
 
 .sidebar-section {
@@ -36,43 +40,62 @@ body {
   letter-spacing: 1px;
 }
 
-.file-tree,
-.sub-files {
-  list-style: none;
-  padding-left: 10px;
-}
-
-.file,
-.folder {
-  padding: 4px 0;
+.file-tree li {
+  padding: 4px 8px;
   cursor: pointer;
 }
 
-.file:hover,
-.folder:hover {
-  background-color: #373737;
+/* Folder label (non-clickable, no hover effect) */
+.folder {
+  color: #cccccc;
+  font-weight: 600;
+  padding: 4px 8px;
+  cursor: default;
+}
+
+
+.file:hover {
+  background-color: #37373d;
 }
 
 .file.active {
   background-color: #094771;
-  color: #fff;
+  color: #ffffff;
 }
 
 /* Nested file list under folder */
 .sub-files {
+  cursor: pointer;
+  list-style: none;
   padding-left: 15px;
   margin-top: 5px;
 }
 
 /* Contact Info Bar */
 .contact-bar {
-  font-size: 0.75rem;
+  font-size: 1.05rem;
   padding-top: 10px;
   border-top: 1px solid #333;
   color: #999;
   display: flex;
   flex-direction: column;
   gap: 4px;
+}
+
+.contact-bar a,
+.contact-bar a:link,
+.contact-bar a:visited,
+.contact-bar a:active,
+.contact-bar a:focus,
+.contact-bar a:hover {
+  color: #007acc !important;
+  text-decoration: none;
+  font-weight: 500;
+  transition: opacity 0.2s ease;
+}
+
+.contact-bar a:hover {
+  opacity: 0.85;
 }
 
 /* Editor Area */
@@ -85,15 +108,16 @@ body {
 /* Tabs Bar */
 .tabs {
   display: flex;
-  background-color: #2d2d2d;
-  border-bottom: 1px solid #444;
+  background-color: #1e1e1e;
+  border-bottom: 1px solid #3c3c3c;
 }
 
 .tab {
   padding: 8px 12px;
   cursor: pointer;
   border-right: 1px solid #444;
-  background-color: #2d2d2d;
+  background-color: #1e1e1e;
+  color: #d4d4d4;
   display: flex;
   align-items: center;
 }
@@ -111,7 +135,8 @@ body {
 
 /* Editor Window */
 .editor-window {
-  background-color: #1e1e1e;
+  background-color: #2d2d30;
+  color: #d4d4d4;
   padding: 20px;
   height: 100%;
   overflow-y: auto;

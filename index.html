@@ -9,30 +9,32 @@
 <body>
   <div class="vscode-container">
 
-    <!-- Sidebar -->
     <aside class="sidebar">
-      <div class="sidebar-section">EXPLORER</div>
-      <ul class="file-tree">
-        <li class="file active" data-file="README.md">README.md</li>
-        <li class="folder">Projects
-          <ul class="sub-files">
-            <li class="file" data-file="smart-glasses.js">smart-glasses.js</li>
-            <li class="file" data-file="pdf-rag.js">pdf-rag.js</li>
-            <li class="file" data-file="budget-tracker.js">budget-tracker.js</li>
-            <li class="file" data-file="multilingual-transcriber.js">multilingual-transcriber.js</li>
-          </ul>
-        </li>
-        <li class="file" data-file="Skills.css">Skills.css</li>
-        <li class="file" data-file="Experience.ts">Experience.ts</li>
-      </ul>
+        <div class="sidebar-top">
+            <div class="sidebar-section">EXPLORER</div>
+            <ul class="file-tree">
+            <li class="file active" data-file="README.md">README.md</li>
+            <li class="folder">Projects
+                <ul class="sub-files">
+                <li class="file" data-file="smart-glasses.js">smart-glasses.js</li>
+                <li class="file" data-file="pdf-rag.js">pdf-rag.js</li>
+                <li class="file" data-file="budget-tracker.js">budget-tracker.js</li>
+                <li class="file" data-file="multilingual-transcriber.js">multilingual-transcriber.js</li>
+                </ul>
+            </li>
+            <li class="file" data-file="Skills.css">Skills.css</li>
+            <li class="file" data-file="Experience.ts">Experience.ts</li>
+            </ul>
+        </div>
 
-      <!-- Contact Section -->
-      <div class="contact-bar">
-        <span>📧 you@example.com</span>
-        <span>🔗 LinkedIn</span>
-        <span>💻 GitHub</span>
-      </div>
-    </aside>
+        <!-- Contact stays at the bottom -->
+        <div class="contact-bar">
+            <a href="mailto:atharv@example.com">email</a>
+            <a href="https://github.com/atharvmunot004" target="_blank">github</a>
+            <a href="https://linkedin.com/in/atharvmunot" target="_blank">linkedin</a>
+        </div>
+        </aside>
+
 
     <!-- Main Editor -->
     <main class="editor">
@@ -48,7 +50,7 @@
 // I'm a systems thinker, AI enthusiast, and builder of intelligent tools.
 const aboutMe = {
   college: "COEP Technological University",
-  goals: ["VP in 8 years", "Innovate in AI/Systems"],
+  goals: ["Innovate in AI/Systems"],
   interests: ["AI", "Quantum ML", "AR Glasses", "Edge Computing"]
 }
 </code></pre>
