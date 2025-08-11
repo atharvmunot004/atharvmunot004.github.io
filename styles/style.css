@@ -131,6 +131,39 @@ body {
   flex-direction: column;
 }
 
+.editor-window {
+  font-family: "Fira Code", monospace;
+  background-color: #1e1e1e;
+  white-space: pre; /* preserve spaces exactly as they are */
+  line-height: 0.2;
+  padding: 10px;
+  color: #d4d4d4;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: auto;
+  white-space: pre-wrap;
+}
+
+#editor-window code {
+  white-space: pre;       /* ensures spaces in code are preserved */
+  display: block;         /* makes it behave like a block element */
+}
+
+.editor-window div {
+  white-space: pre; /* make each div respect spaces */
+  padding: 0;
+  line-height: 1.4;
+}
+.editor-window:focus {
+  outline: none;
+}
+
+.editor-window [contenteditable="true"] {
+  outline: none;
+}
+
+
+
 /* Tabs Bar */
 .tabs {
   display: flex;
