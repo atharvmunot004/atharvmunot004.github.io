@@ -1,51 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My VS Code Portfolio</title>
+  <title>Atharv Munot</title>
   <link rel="stylesheet" href="styles/style.css" />
 </head>
+
 <body>
   <div class="vscode-container">
 
+    <!-- Sidebar (Explorer) -->
     <aside class="sidebar">
-        <div class="sidebar-top">
-            <div class="sidebar-section">EXPLORER</div>
-            <ul class="file-tree">
-            <li class="file active" data-file="README.md">README.md</li>
-            <li class="folder">Projects
-                <ul class="sub-files">
-                <li class="file" data-file="smart-glasses.js">smart-glasses.js</li>
-                <li class="file" data-file="pdf-rag.js">pdf-rag.js</li>
-                <li class="file" data-file="budget-tracker.js">budget-tracker.js</li>
-                <li class="file" data-file="multilingual-transcriber.js">multilingual-transcriber.js</li>
-                </ul>
-            </li>
-            <li class="file" data-file="Skills.css">Skills.css</li>
-            <li class="file" data-file="Experience.ts">Experience.ts</li>
+      <div class="sidebar-top">
+        <div class="sidebar-section">EXPLORER</div>
+        <ul class="file-tree">
+          <!-- Files -->
+          <li class="file" data-file="README.md">README.md</li>
+
+          <!-- Folder -->
+          <li class="folder">
+            <span class="folder-label">Projects</span>
+            <ul class="sub-files">
+              <li class="file" data-file="smart-glasses.js">smart-glasses.js</li>
+              <li class="file" data-file="pdf-rag.js">pdf-rag.js</li>
+              <li class="file" data-file="budget-tracker.js">budget-tracker.js</li>
+              <li class="file" data-file="multilingual-transcriber.js">multilingual-transcriber.js</li>
             </ul>
-        </div>
+          </li>
 
-        <!-- Contact stays at the bottom -->
-        <div class="contact-bar">
-            <a href="mailto:atharv@example.com">email</a>
-            <a href="https://github.com/atharvmunot004" target="_blank">github</a>
-            <a href="https://linkedin.com/in/atharvmunot" target="_blank">linkedin</a>
-        </div>
-        </aside>
+          <!-- More files -->
+          <li class="file" data-file="Skills.css">Skills.css</li>
+          <li class="file" data-file="Experience.ts">Experience.ts</li>
+        </ul>
+      </div>
 
+      <!-- Contact stays at the bottom -->
+      <div class="contact-bar">
+        <a href="mailto:munot.atharv@gmail.com">email</a>
+        <a href="https://github.com/atharvmunot004" target="_blank">github</a>
+        <a href="https://in.linkedin.com/in/atharv-munot-96b96224b" target="_blank">linkedin</a>
+      </div>
+    </aside>
 
     <!-- Main Editor -->
     <main class="editor">
       <!-- Tabs -->
       <div class="tabs">
-        <div class="tab active" data-file="README.md">README.md <span class="close">×</span></div>
+        <!-- Added data-file so JS can update it -->
+        <div class="tab active" data-file="README.md">
+          README.md <span class="close">×</span>
+        </div>
       </div>
 
       <!-- Editor Window -->
       <div class="editor-window" id="editor-window">
-<pre><code>
+        <pre><code>
 // Hello, I'm Atharv Munot
 // I'm a systems thinker, AI enthusiast, and builder of intelligent tools.
 const aboutMe = {
@@ -58,6 +69,8 @@ const aboutMe = {
     </main>
   </div>
 
+  <!-- Script at the very end -->
   <script src="scripts/main.js"></script>
 </body>
+
 </html>
