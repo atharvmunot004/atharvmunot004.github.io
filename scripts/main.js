@@ -1,6 +1,11 @@
 // scripts/main.js
 
 
+document.addEventListener("DOMContentLoaded", () => {
+  const defaultFile = document.querySelector('.file[data-file="README.md"]');
+  defaultFile.classList.add("active");
+  document.getElementById("editor-window").innerHTML = fileContents["README.md"];
+});
 
 // Grab elements
 const files = document.querySelectorAll(".file");
