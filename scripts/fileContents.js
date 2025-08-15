@@ -1,9 +1,8 @@
 window.fileContents = {
-    "README.md": `
-<span style="color: gray;">// Hello, I'm Atharv Munot</span><br>
+    "README.md": `<span style="color: gray;">// Hello, I'm Atharv Munot</span><br>
 <span style="color: gray;">// Systems Thinker | AI Enthusiast | Deep Interest in Computer Organization and Architecture</span><br><span style="color: gray;">// Builder of Intelligent Tools</span><br><span style="color: #569cd6;">const</span><span style="color: #9cdcfe;">aboutMe</span> = {<br><span class="indent-1"><span style="color: #9cdcfe;">name</span>: <span style="color: #ce9178;">"Atharv Munot"</span>,</span><br><span class="indent-1"><span style="color: #9cdcfe;">college</span>: <span style="color: #ce9178;">"COEP Technological University"</span>,</span><br><span class="indent-1"><span style="color: #9cdcfe;">interests</span>: [</span><br><span class="indent-2"><span style="color: #ce9178;">"Artificial Intelligence"</span>,</span><br><span class="indent-2"><span style="color: #ce9178;">"Quantum ML"</span>,</span><br><span class="indent-2"><span style="color: #ce9178;">"Augmented Reality Glasses"</span>,</span><br><span class="indent-2"><span style="color: #ce9178;">"Edge Computing"</span></span><br><span class="indent-1">],</span><br><span class="indent-1"><span style="color: #9cdcfe;">skills</span>: {</span><br><span class="indent-2"><span style="color: #9cdcfe;">languages</span>: <span style="color: #ce9178;">"Python, C (5★ HackerRank), C++, Assembly Language (8086)"</span>,</span><br><span class="indent-2"><span style="color: #9cdcfe;">pythonLibraries</span>: <span style="color: #ce9178;">"TensorFlow, Keras, boto3, scikit-learn, selenium, numpy, pandas, nltk, cirq, qiskit"</span>,</span><br><span class="indent-2"><span style="color: #9cdcfe;">tools</span>: <span style="color: #ce9178;">"Microsoft Power Automate, AWS (Bedrock), LaTeX, Git, GitHub, GNU Plot"</span></span><br><span class="indent-1">}</span><br><span class="indent-1"><span style="color: #9cdcfe;">goals</span>: [</span><br><span class="indent-2"><span style="color: #ce9178;">"Innovate in AI and Systems Design"</span>,</span><br><span class="indent-2"><span style="color: #ce9178;">"Build scalable, impactful products"</span>,</span><br><span class="indent-2"><span style="color: #ce9178;">"Explore Quantum Machine Learning"</span></span><br><span class="indent-1">],</span><br>};<br>
 <span style="color: gray;">// Tip: Click on any file in the explorer to see its contents here.</span><br>
-`,
+    `,
 
 
     "smart-glasses.js": `
@@ -53,61 +52,6 @@ window.fileContents = {
     </div>
     <div style="margin-left: 20px;" contenteditable="false">
       console.log(<span style="color: #ce9178;">"Transcribing:"</span>, audio);
-    </div>
-    <div>}</div>
-  `,
-
-    "Skills.css": `
-    <div style="font-family: Consolas, 'Courier New', monospace;
-            font-size: 13px; 
-            line-height: 1.4; 
-            color: #d4d4d4;">
-
-  <div style="color: gray;">/* Skills Overview */</div>
-
-  <div>
-    <span style="color: #569cd6;">.languages</span> {
-  </div>
-  <div style="margin-left: 20px;">
-    <span style="color: #9cdcfe;">list</span>: 
-    <span style="color: #ce9178;">"Python, C (5★ HackerRank), C++ (DSA), Assembly Language (8086)"</span>;
-  </div>
-  <div>}</div>
-
-  <div>
-    <span style="color: #569cd6;">.python-libraries</span> {
-  </div>
-  <div style="margin-left: 20px;">
-    <span style="color: #9cdcfe;">list</span>: 
-    <span style="color: #ce9178;">"TensorFlow, Keras, boto3, scikit-learn, selenium, numpy, pandas, nltk, cirq, qiskit"</span>;
-  </div>
-  <div>}</div>
-
-  <div>
-    <span style="color: #569cd6;">.tools</span> {
-  </div>
-  <div style="margin-left: 20px;">
-    <span style="color: #9cdcfe;">list</span>: 
-    <span style="color: #ce9178;">"Microsoft Power Automate, AWS (Bedrock), LaTeX, Git, GitHub, GNU Plot"</span>;
-  </div>
-  <div>}</div>
-
-</div>
-`,
-
-    "Experience.ts": `
-    <div style="color: gray;">// Experience TypeScript file</div>
-    <div>
-      <span style="color: #569cd6;">interface</span> <span style="color: #dcdcaa;">Experience</span> {
-    </div>
-    <div style="margin-left: 20px;" contenteditable="false">
-      <span style="color: #9cdcfe;">role</span>: <span style="color: #569cd6;">string</span>;
-    </div>
-    <div style="margin-left: 20px;" contenteditable="false">
-      <span style="color: #9cdcfe;">company</span>: <span style="color: #569cd6;">string</span>;
-    </div>
-    <div style="margin-left: 20px;" contenteditable="false">
-      <span style="color: #9cdcfe;">years</span>: <span style="color: #b5cea8;">number</span>;
     </div>
     <div>}</div>
   `
