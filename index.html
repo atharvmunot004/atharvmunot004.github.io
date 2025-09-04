@@ -18,26 +18,36 @@
         <ul class="file-tree">
           <!-- Files -->
           <li class="file" data-file="README.md">README.md</li>
+          
+          <li class="folder">
+            <span class="folder-label">Experience
+            </span>
+            <ul class="sub-files">
+              <li class="file" data-file="Enterprise-Intern.md">Enterprise-Intern.md</li>
+              <li class="file" data-file="LLM-Agents-Team.md">LLM-Agents-Team.md</li>
+              <li class="file" data-file="Online-Sourcing-and-Procurement-Team.md">Online-Sourcing-and-Procurement-Team.md</li>
+            </ul>
+          </li>
 
           <!-- Folder -->
           <li class="folder">
             <span class="folder-label">Projects</span>
             <ul class="sub-files">
-              <li class="file" data-file="smart-glasses.js">smart-glasses.js</li>
-              <li class="file" data-file="pdf-rag.js">pdf-rag.js</li>
-              <li class="file" data-file="budget-tracker.js">budget-tracker.js</li>
-              <li class="file" data-file="multilingual-transcriber.js">multilingual-transcriber.js</li>
+              <li class="file" data-file="Enterprise-Workflow-Automation-Framework.md">Enterprise-Workflow-Automation-Framework.md</li>
+              <li class="file" data-file="QMLHEP-GSoC-2025-Quantum-KANs.md">QMLHEP-GSoC-2025-Quantum-KANs.md</li>
+              <li class="file" data-file="Demand-Paging-in-xv6-public.md">Demand-Paging-in-xv6-public.md</li>
+              <li class="file" data-file="Multi-Agent-LLM-Orchestration-Platform.md">Multi-Agent-LLM-Orchestration-Platform.md</li>
+              <li class="file" data-file="RE-DACT.md">RE-DACT.md</li>
+              <li class="file" data-file="Multiuser-Private-Data-Storage-Server.md">Multiuser-Private-Data-Storage-Server.md</li>
+              <li class="file" data-file="FloraPhyll-App.md">FloraPhyll-App.md</li>
+              <li class="file" data-file="Smart-Task-Scheduler-for-Humans.md">Smart-Task-Scheduler-for-Humans.md</li>
+              <li class="file" data-file="Automated-Data-Collection-Application.md">Automated-Data-Collection-Application.md</li>
+
             </ul>
           </li>
 
           <!-- More files -->
-          <li class="folder">
-            <span class="folder-label">Experience
-            </span>
-            <ul class="sub-files">
-              <li class="file" data-file="">Enterprise-Intern</li>
-            </ul>
-          </li>
+          
       </div>
 
       <!-- Contact stays at the bottom -->
@@ -53,8 +63,14 @@
       <!-- Tabs -->
       <div class="tabs">
         <!-- Added data-file so JS can update it -->
-        <div class="tab active" data-file="README.md">README.md<span class="close">×</span>
-        </div>
+        <div class="tab active" data-file="README.md">README.md<span class="close">×</span></div>
+        <button id="download-btn" class="download-btn-top" title="Download">
+          <!-- Download SVG icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M12 16a1 1 0 0 1-.707-.293l-5-5a1 1 0 1 1 1.414-1.414L11 12.586V4a1 1 0 1 1 2 0v8.586l3.293-3.293a1 1 0 1 1 1.414 1.414l-5 5A1 1 0 0 1 12 16z"/>
+            <path fill="currentColor" d="M4 20a1 1 0 0 1-1-1v-2a1 1 0 1 1 2 0v1h14v-1a1 1 0 1 1 2 0v2a1 1 0 0 1-1 1H4z"/>
+          </svg>
+        </button>
       </div>
 
       <!-- Editor Window -->
@@ -66,6 +82,7 @@
 
   <!-- Script at the very end -->
   <script src="scripts/fileContents.js"></script>
+  <script src="scripts/download.js"></script>
   <script src="scripts/main.js"></script>
 </body>
 

@@ -21,16 +21,19 @@ body {
 /* Sidebar */
 .sidebar {
   width: 250px;
+  max-width: 250px;       /* Prevent overflow, adjust as needed */
   background-color: #1e1e1e;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   border-right: 1px solid #3c3c3c;
   padding: 10px;
+  flex-shrink: 0;
+  overflow-y: auto;
 }
 
 .sidebar-top {
-  flex-grow: 1;
+  flex-grow: 0;
 }
 
 .sidebar-section {
@@ -199,8 +202,34 @@ body {
 /* Tabs Bar */
 .tabs {
   display: flex;
+  align-items: center;
   background-color: #1e1e1e;
   border-bottom: 1px solid #3c3c3c;
+  /* Add this for horizontal spacing */
+  padding-right: 10px;
+}
+
+.download-btn-top {
+  margin-left: auto;
+  padding: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  background: #007acc;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  transition: background 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 32px;
+  width: 32px;
+}
+
+.download-btn-top svg {
+  display: block;
+  width: 22px;
+  height: 22px;
 }
 
 .tab {

@@ -5,6 +5,12 @@ document.addEventListener("DOMContentLoaded", () => {
   const defaultFile = document.querySelector('.file[data-file="README.md"]');
   defaultFile.classList.add("active");
   document.getElementById("editor-window").innerHTML = fileContents["README.md"];
+
+  // Update download button's data-file attribute to default file
+  const downloadBtn = document.getElementById("download-btn");
+  if (downloadBtn) {
+    downloadBtn.setAttribute("data-file", "README.md");
+  }
 });
 
 // Grab elements
@@ -30,6 +36,12 @@ files.forEach(file => {
     if (tab) {
       tab.setAttribute("data-file", fileName);
       tab.innerHTML = `${fileName} <span class="close">×</span>`;
+    }
+
+    // Update download button's data-file attribute
+    const downloadBtn = document.getElementById("download-btn");
+    if (downloadBtn) {
+      downloadBtn.setAttribute("data-file", fileName);
     }
   });
 });
